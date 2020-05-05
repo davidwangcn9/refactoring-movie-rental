@@ -1,5 +1,5 @@
 package cn.xpbootcamp.refactor;
 
-public interface IFormater {
+public interface IPrinter {
     String getStatement(Customer customer);
 }

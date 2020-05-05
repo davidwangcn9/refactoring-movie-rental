@@ -5,10 +5,10 @@ import java.util.Vector;
 public class Customer {
 
     private final String name;
-    private final IFormater formater;
+    private final IPrinter formater;
     private Vector<Rental> rentals = new Vector<>();
 
-    Customer(String name, IFormater formater) {
+    Customer(String name, IPrinter formater) {
         this.name = name;
         this.formater = formater;
     }

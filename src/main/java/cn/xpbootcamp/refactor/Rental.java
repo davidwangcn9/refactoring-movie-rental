@@ -1,5 +1,7 @@
 package cn.xpbootcamp.refactor;
 
+import cn.xpbootcamp.refactor.movies.Movie;
+
 public class Rental {
 
     private Movie movie;
@@ -8,6 +10,14 @@ public class Rental {
     Rental(Movie movie, int daysRented) {
         this.movie = movie;
         this.daysRented = daysRented;
+    }
+
+    double getAmount() {
+        return movie.calculateCharging(daysRented);
+    }
+
+    int getCredit() {
+        return movie.calculateCredit(daysRented);
     }
 
     Movie getMovie() {
