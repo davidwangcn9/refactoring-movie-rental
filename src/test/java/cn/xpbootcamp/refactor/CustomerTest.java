@@ -9,7 +9,7 @@ class CustomerTest {
 
     @Test
     void should_return_correct_result_when_call_statement() {
-        Customer customer = new Customer("老王");
+        Customer customer = new Customer("老王", new StatementFormater());
         customer.addRental(new Rental(new Movie("同桌的你", Movie.CAMPUS), 4));
         customer.addRental(new Rental(new Movie("宠爱", Movie.NEW_RELEASE), 5));
         customer.addRental(new Rental(new Movie("战狼2", Movie.HISTORY), 6));
